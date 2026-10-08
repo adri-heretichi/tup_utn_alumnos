@@ -1,0 +1,48 @@
+<?php
+
+return [
+    'required' => 'El campo :attribute es obligatorio.',
+    'string' => 'El campo :attribute debe ser un texto válido.',
+    'email' => 'El campo :attribute debe ser un correo electrónico válido.',
+    'lowercase' => 'El campo :attribute debe estar en minúsculas.',
+    'unique' => 'El valor del campo :attribute ya está registrado.',
+    'ends_with' => 'El campo :attribute debe terminar en uno de estos valores: :values.',
+    'confirmed' => 'La confirmación del campo :attribute no coincide.',
+    'current_password' => 'La contraseña actual es incorrecta.',
+    'url' => 'El campo :attribute debe ser una URL válida.',
+    'image' => 'El campo :attribute debe ser una imagen válida.',
+    'file' => 'El campo :attribute debe ser un archivo válido.',
+    'uploaded' => 'No se pudo cargar el archivo del campo :attribute.',
+    'mimes' => 'El archivo del campo :attribute debe tener uno de estos formatos: :values.',
+    'mimetypes' => 'El archivo del campo :attribute debe tener uno de estos tipos: :values.',
+    'max' => [
+        'array' => 'El campo :attribute no puede contener más de :max elementos.',
+        'file' => 'El archivo del campo :attribute no puede superar los :max kilobytes.',
+        'numeric' => 'El campo :attribute no puede ser mayor que :max.',
+        'string' => 'El campo :attribute no puede superar los :max caracteres.',
+    ],
+    'min' => [
+        'array' => 'El campo :attribute debe contener al menos :min elementos.',
+        'file' => 'El archivo del campo :attribute debe tener al menos :min kilobytes.',
+        'numeric' => 'El campo :attribute debe ser al menos :min.',
+        'string' => 'El campo :attribute debe tener al menos :min caracteres.',
+    ],
+    'password' => [
+        'letters' => 'El campo :attribute debe contener al menos una letra.',
+        'mixed' => 'El campo :attribute debe contener al menos una mayúscula y una minúscula.',
+        'numbers' => 'El campo :attribute debe contener al menos un número.',
+        'symbols' => 'El campo :attribute debe contener al menos un símbolo.',
+        'uncompromised' => 'La contraseña ingresada apareció en una filtración de datos. Elegí otra contraseña.',
+    ],
+    'attributes' => [
+        'name' => 'nombre',
+        'email' => 'correo electrónico',
+        'password' => 'contraseña',
+        'password_confirmation' => 'confirmación de contraseña',
+        'current_password' => 'contraseña actual',
+        'phone' => 'teléfono',
+        'professional_url' => 'red profesional',
+        'photo' => 'fotografía',
+        'token' => 'token',
+    ],
+];

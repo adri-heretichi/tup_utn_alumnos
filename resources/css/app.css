@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .utn-button {
+        @apply inline-flex items-center justify-center rounded-md border border-black bg-black px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+    }
+    .utn-secondary {
+        @apply inline-flex items-center justify-center rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm font-semibold hover:bg-neutral-100 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+    }
+    .utn-link {
+        @apply text-black underline underline-offset-4 hover:text-neutral-600 focus:outline-none focus:ring-2 focus:ring-black;
+    }
+    .utn-card {
+        @apply rounded-xl border border-neutral-200 bg-white shadow-sm;
+    }
+
+    .utn-access {
+        @apply block min-w-0 p-6 text-black transition hover:border-neutral-400 focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2;
+    }
+
+    /* Scoped to authenticated navigation; Breeze components retain their behavior. */
+    .utn-navigation .utn-nav-link {
+        @apply border-transparent text-neutral-600 hover:border-neutral-300 hover:text-black;
+    }
+
+    .utn-navigation .utn-nav-link.utn-nav-active {
+        @apply border-black text-black;
+    }
+
+    .utn-navigation .utn-mobile-link {
+        @apply border-transparent bg-white text-neutral-700 hover:border-neutral-300 hover:bg-neutral-50 hover:text-black;
+    }
+
+    .utn-navigation .utn-mobile-link.utn-nav-active {
+        @apply border-black bg-neutral-100 text-black;
+    }
+
+    .utn-navigation .utn-nav-link:focus-visible,
+    .utn-navigation .utn-mobile-link:focus-visible {
+        @apply border-black bg-neutral-100 text-black outline outline-2 outline-offset-2 outline-black;
+    }
+}
